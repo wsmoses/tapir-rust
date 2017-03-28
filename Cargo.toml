@@ -1,16 +1,13 @@
 [package]
-description = "Bindings to LLVM's C API"
-documentation = "http://rustdoc.taricorp.net/llvm-sys/llvm_sys/"
-repository = "https://bitbucket.org/tari/llvm-sys.rs"
+description = "Bindings to Tapir/LLVM's C API"
 readme = "README.md"
 license = "MIT"
-keywords = ["bindings", "llvm"]
+keywords = ["bindings", "llvm", "tapir"]
 
-name = "llvm-sys"
-version = "39.0.1"
+name = "tapir-sys"
+version = "40.0.1"
 authors = [
-  "Peter Marheine <peter@taricorp.net>",
-  "Scott Olson <scott@solson.me>",
+  "William S. Moses <wmoses@mit.edu>"
 ]
 build = "build.rs"
 

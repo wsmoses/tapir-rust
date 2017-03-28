@@ -827,6 +827,14 @@ extern "C" {
                                  N: ::libc::c_uint)
                                  -> LLVMValueRef;
     pub fn LLVMBuildBr(arg1: LLVMBuilderRef, Dest: LLVMBasicBlockRef) -> LLVMValueRef;
+
+    pub fn LLVMBuildSync(arg1: LLVMBuilderRef, Dest: LLVMBasicBlockRef) -> LLVMValueRef;
+    pub fn LLVMBuildReattach(arg1: LLVMBuilderRef, Dest: LLVMBasicBlockRef) -> LLVMValueRef;
+    pub fn LLVMBuildReattachBr(arg1: LLVMBuilderRef,
+                           Child: LLVMBasicBlockRef,
+                           Parent: LLVMBasicBlockRef)
+                           -> LLVMValueRef;
+
     pub fn LLVMBuildCondBr(arg1: LLVMBuilderRef,
                            If: LLVMValueRef,
                            Then: LLVMBasicBlockRef,
